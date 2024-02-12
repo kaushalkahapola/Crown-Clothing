@@ -2,12 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage.component";
-
-const HatPage = () => (
-  <div>
-    <h1>This is Hat Page</h1>
-  </div>
-);
+import ShopPage from "./pages/shop/shop.component";
 
 function App() {
   return (
@@ -15,7 +10,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/hats" element={<HatPage />} />
+          <Route path="/shop" element={<ShopPage />} />
         </Routes>
       </div>
     </>
